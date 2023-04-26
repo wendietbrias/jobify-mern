@@ -1,0 +1,76 @@
+.add-job-container {
+    padding:2rem 3rem;
+
+     .add-job-form {
+        background-color: #fff;
+        padding:1.7rem 1.5rem;
+        border-radius: 4px;
+        box-shadow:var(--shadow-1);
+
+         h4 {
+            font-size:1.7rem;
+            font-weight:500;
+         }
+
+         
+         .form {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:12px;
+            margin-top:25px;
+
+              .form-control {
+                display:flex;
+                flex-direction: column;
+                row-gap:10px;
+
+                 input {
+                   width:100%;
+                   padding:0.6rem 0.5rem;
+                   outline:none;
+                   background-color: var(--grey-50);
+                   border:solid 1px var(--grey-100);
+                   border-radius: 6px;
+
+                 }
+
+                 select {
+                    width:100%;
+                    padding:0.6rem 0.5rem;
+                    outline:none;
+                    background-color: var(--grey-50);
+                    border-radius: 6px;
+                    border:solid 1px var(--grey-100);
+                 }
+
+              }
+
+              .form-button {
+                display: flex;
+                align-items: flex-end;
+                column-gap:8px;
+
+                  button {
+                    padding:0.6rem 0;
+                    border-radius: 6px;
+                    border:none;
+                    flex:1;
+                    color:#fff;
+                    font-weight:500;
+                    font-size:0.9rem;
+                    cursor:pointer;
+                    box-shadow: var(--shadow-1);
+                  }
+
+                  #submit {
+                     background-color: var(--primary-500);
+                  }
+
+                  #cancel {
+                    background-color: var(--primary-700);
+
+                  }
+              }
+          }
+     }
+}

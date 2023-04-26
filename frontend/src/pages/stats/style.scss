@@ -1,0 +1,87 @@
+
+.stats-container {
+    width:100%;
+    padding:2rem 3rem;
+
+     .stats-grid {
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+        gap:10px;
+
+         .stats-grid__item {
+            background-color: #fff;
+            padding:1.2rem 1.2rem;
+            border-radius:4px;
+            box-shadow:var(--shadow-1);
+         
+              
+              .stats-grid-count {
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-between;
+                 
+
+                  h2 {
+                    font-size:2.8rem;
+                  }
+
+                  .stats-grid-count__icon {
+                     padding:0.5rem 0.8rem;
+                     font-size:2rem;
+                     
+                     &.pending {
+                     background-color:rgba(233,185,73,0.3);                        
+                     }
+
+                     &.interview {
+                       background-color:rgba(100, 122, 203,0.3);
+                     }
+
+                     &.declined {
+                      background-color:rgba(214, 106, 106, 0.3);
+                    }
+                  }
+
+                  &.pending {
+                    color:rgb(233, 185, 73);
+
+                  }
+
+                  &.interview {
+                    color:rgb(100, 122, 203);
+
+                  }
+
+                  &.declined {
+                    color:rgb(214, 106, 106);
+
+                  }
+              }
+
+              h4 {
+                font-weight:500;
+                font-size:1.4rem;
+                margin-top:12px;
+              }
+
+              &.pending {
+                border-top: solid 4px rgb(233, 185, 73);
+
+              }
+
+              &.interview {
+                border-top:solid 4px rgb(100, 122, 203);
+
+              }
+
+              &.declined {
+                border-top:solid 4px rgb(214, 106, 106);
+
+              }
+         }
+     }
+
+     .chart-container {
+      margin-top:25px;
+     }
+}

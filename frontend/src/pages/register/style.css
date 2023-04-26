@@ -1,0 +1,94 @@
+.register-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+.register-container .register-content {
+  width: 27vw;
+  border-top: solid 5px var(--primary-500);
+  padding: 1.5rem;
+  background-color: #fff;
+}
+.register-container .register-content .register-content__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 25px;
+}
+.register-container .register-content .register-content__header h2 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.register-container .register-content .form-register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+  margin-top: 25px;
+}
+.register-container .register-content .form-register .form-button {
+  width: 100%;
+  background-color: var(--primary-500);
+  color: #fff;
+  outline: none;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.register-container .register-content .form-register .form-button:hover {
+  background-color: var(--primary-700);
+}
+.register-container .register-content .form-register .form-control {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 8px;
+}
+.register-container .register-content .form-register .form-control label {
+  font-weight: 400;
+  color: var(--grey-700);
+}
+.register-container .register-content .form-register .form-control .form-control__input {
+  width: 100%;
+  background-color: var(--grey-100);
+  border-radius: 2px;
+  padding: 0.42rem 1rem;
+  border: solid 1px var(--grey-300);
+  outline: none;
+}
+.register-container .register-content .redirect__el {
+  text-align: center;
+  color: var(--grey-300);
+  margin-top: 14px;
+}
+.register-container .register-content .redirect__el a {
+  color: var(--primary-500);
+  text-decoration: none;
+  font-weight: 500;
+}
+@media screen and (max-width: 1024px) {
+  .register-container .register-content {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .register-container .register-content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .register-container .register-content {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

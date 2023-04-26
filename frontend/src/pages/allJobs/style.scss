@@ -1,0 +1,256 @@
+
+.jobs-container {
+    padding:2rem 3rem;
+
+     .search-container {
+         box-shadow: var(--shadow-2);
+         background-color: #fff;
+         border-radius: 4px;
+         padding:1.7rem 1.5rem;
+
+          h4 {
+            font-size:1.7rem;
+            font-weight: 500;
+          }
+
+          .form {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:12px;
+            margin-top:25px;
+
+              .form-control {
+                display:flex;
+                flex-direction: column;
+                row-gap:10px;
+
+                 input {
+                   width:100%;
+                   padding:0.6rem 0.5rem;
+                   outline:none;
+                   background-color: var(--grey-50);
+                   border:solid 1px var(--grey-100);
+                   border-radius: 6px;
+
+                 }
+
+                 select {
+                    width:100%;
+                    padding:0.6rem 0.5rem;
+                    outline:none;
+                    background-color: var(--grey-50);
+                    border-radius: 6px;
+                    border:solid 1px var(--grey-100);
+                 }
+
+              }
+
+              .form-button {
+                display: flex;
+                align-items: flex-end;
+
+                 #clear {
+                   width: 100%;
+                   padding:0.6rem 0;
+                   font-size:0.9rem;
+                   font-weight:600;
+                   background-color: var(--red-light);
+                   color:var(--red-dark);
+                   border-radius: 4px;
+                   outline:none;
+                   border:solid 1px var(--red-light);
+                   box-shadow:var(--shadow-2);
+                 }
+              }
+          }
+     }
+
+     .loading-job-container {
+       padding:2rem 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+     .job-items-container {
+      margin-top:40px;
+
+       .jobs-item {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:12px;
+        margin-top:20px;
+
+         .job-item {
+          background-color: #fff;
+          box-shadow:var(--shadow-1);
+          border-radius: 4px;
+
+            .job-item__header {
+              display: flex;
+              align-items: center;
+              column-gap:20px;
+              border-bottom:solid 1px var(--grey-100);
+              padding:0.8rem 1.2rem;
+
+               .job-profile {
+                 color:#fff;
+                 background-color: var(--primary-500);
+                 text-transform:uppercase;
+                 display: block;
+                 padding:0.6rem 1.2rem;
+                 font-weight: 700;
+                 border-radius: 2px;
+                 font-size:1.7rem;
+               }
+
+               .job-title {
+                h4 {
+                  font-weight:500;
+                  font-size:1.3rem;
+                }
+
+                h5 {
+                  font-weight:500;
+                  font-size:0.95rem;
+                  color:var(--grey-400);
+                  margin-top:3px;
+                }
+               }
+            }
+
+            .job-item__detail {
+               display: flex;
+               align-items: center;
+               flex-wrap:wrap;
+               padding:1rem 1.2rem;
+               row-gap:14px;
+
+                .detail__item {
+                   width:48%;
+                   display: flex;
+                   align-items: center;
+                   color:var(--grey-500);
+                   column-gap:10px;
+                    
+                    .detail__item-icon {
+                      font-size:1.1rem;
+                    }
+
+                  
+                }
+
+                  button {
+                      border:none;
+                      cursor:pointer;
+                      padding:0.4rem 0.9rem;
+                      border-radius:4px;
+                      font-weight:500;
+                      box-shadow: var(--shadow-1);
+                      font-size:0.95rem;
+
+                      &.pending {
+                        background-color:rgba(233, 185, 73,0.3);
+                        color:rgb(233, 185, 73);
+    
+                      }
+    
+                      &.interview {
+                        background-color: rgba(100, 122, 203,0.3);
+                        color:rgb(100, 122, 203);
+    
+                      }
+    
+                      &.declined {
+                        background-color:rgba(214, 106, 106,0.3);
+                        color:rgb(214, 106, 106);
+    
+                      }
+
+                    }
+               }
+ 
+               .job-item__action {
+                display:flex;
+                align-items:center;
+                column-gap:8px;
+                padding:0 1.2rem 0.8rem;
+                margin-top:5px;
+
+                 button {
+                  border:none;
+                  cursor:pointer;
+                  padding:0.4rem 0.9rem;
+                  border-radius:4px;
+                  font-weight:500;
+                  box-shadow: var(--shadow-1);
+                  font-size:0.9rem;
+                 }
+
+                 .job-item__action-edit {
+                    background-color: var(--primary-100);
+                    color:var(--primary-600);
+                 }
+
+                 .job-item__action-delete {
+                  background-color: var(--red-light);
+                  color:var(--red-dark);
+                 }
+               }
+              
+          }
+        }
+     }
+
+     .pagination {
+      display: flex;
+      justify-content: flex-end;
+      align-items:center;
+      margin-top:25px;
+
+       .next ,
+       .prev{
+        background-color: #fff;
+        padding:0.6rem 1rem;
+        font-size:1rem;
+        font-weight:500;
+        border:none;
+        outline:none;
+        display: flex;
+        align-items: center;
+        text-transform:capitalize;
+        column-gap:5px;
+        color:var(--primary-500);
+
+
+         .icon {
+          color:var(--primary-500);
+          font-size:1.2rem;
+         }
+       }
+
+       .next {
+        margin-right:8px;
+       }
+       .prev {
+        margin-left:8px;
+       }
+
+
+       .paginate-count {
+        color:var(--primary-500);
+        padding:0.6rem 1rem;
+        font-size:1.1rem;
+        border:none;
+        outline:none;
+        font-weight: 500;
+        background-color: var(--primary-100);
+        border-radius: 4px;
+
+         &.active {
+          background-color: var(--primary-500);
+          color:#fff;
+         }
+       }
+     }
+  }

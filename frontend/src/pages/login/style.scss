@@ -1,0 +1,121 @@
+@mixin FlexDisplay($items : flex-start,$direction:row,$justify:flex-start){
+   display:flex;
+   align-items: $items;
+   flex-direction: $direction;
+   justify-content: $justify;
+}
+
+.login-container {
+    width:100%;
+    min-height:100vh;
+    @include FlexDisplay(center,column,center);
+
+     .login-content {
+        width:27vw;
+        background-color: #fff;
+        border-top:solid 5px var(--primary-500);
+        border-radius: 4px;
+        padding:1.6rem 1.2rem; 
+
+        .login-content__header {
+         @include FlexDisplay(center,column,center);
+         row-gap:25px;
+
+         h2 {
+            text-align:center;
+            font-size:2rem;
+            font-weight:500;
+         }
+        }
+  
+
+        .form-login {
+         @include FlexDisplay(center,column,center);
+         row-gap:12px;
+         margin-top:25px;
+
+         .form-button {
+            width:100%;
+            background-color: var(--primary-500);
+            color:#fff;
+            outline:none;
+            font-weight: 500;
+            padding:0.5rem ;
+            border-radius: 4px;
+            margin-top:20px;
+            border:none;
+            font-size:1.25rem;
+            cursor:pointer;
+            transition:all 0.3s ease-in;
+
+            &:hover {
+               background-color:var(--primary-700);
+            }
+         }
+
+           .form-control {
+            width:100%;
+            @include FlexDisplay(flex-start,column,center);
+            row-gap:8px;
+
+            label {
+               font-weight:400;
+               color:var(--grey-700)
+            }
+              
+              .form-control__input{
+               width:100%;
+               background-color: var(--grey-100);
+               border-radius: 2px;
+               padding:0.42rem 0.6rem;
+               border:solid 1px var(--grey-300);
+               outline:none;
+              }
+           }
+
+           .forgot-pass{
+            width:100%;
+            display: flex;
+            justify-content:flex-start;
+
+              .redirect__el {
+                font-size:0.85rem;
+                margin-top:4px;
+               text-align:left;
+
+              }
+           }
+        }
+
+        .redirect__el {
+         text-align: center;
+         color:var(--grey-300);
+         margin-top:14px;
+          
+          a {
+            color:var(--primary-500);
+            text-decoration: none;
+            font-weight: 500;
+          }
+        }
+      
+     }
+
+     @media screen and (max-width:1024px) {
+      .login-content {
+        width:50%;
+      }
+  }
+
+  @media screen and (max-width:520px) {
+    .login-content {
+      width:70%;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    .login-content {
+      width:90%;
+    }
+  }
+}

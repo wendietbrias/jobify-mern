@@ -1,0 +1,55 @@
+
+.reset-pass-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .reset-form-container {
+        background-color: #fff;
+        width:30vw;
+        padding:1.2rem;
+        border-top:solid 5px var(--primary-500);
+
+        h2 {
+            text-align: center;
+            font-weight: 500;
+        }
+
+         .reset-form {
+            margin-top:25px;
+            display: flex;
+            flex-direction: column;
+            row-gap:10px;
+
+             .form-control {
+                display: flex;
+                flex-direction: column;
+                row-gap:10px;
+
+                 input[type="password"] {
+                    width:100%;
+                    background-color: var(--grey-100);
+                    border-radius: 2px;
+                    padding:0.42rem 0.6rem;
+                    border:solid 1px var(--grey-300);
+                    outline:none;
+                 }
+             }
+
+             button[type="submit"] {
+                margin-top:15px;
+                background-color: var(--primary-500);
+                color:#fff;
+                font-weight: 500;
+                outline:none;
+                border:none;
+                cursor:pointer;
+                padding:0.5rem;
+                width:100%;
+                font-size:0.9rem;
+             }
+         }
+    }
+}

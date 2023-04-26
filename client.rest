@@ -1,0 +1,2 @@
+ GET http://localhost:8080/api/job/all/user 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoid2VuZGl3YWxrZXIiLCJlbWFpbCI6IndlbmRpQGdtYWlsLmNvbSIsIl9pZCI6IjY0M2NiN2ZhODhmOWUwYmI3ZDY0OWJiZiIsImlhdCI6MTY4MTcxMDA3NX0.IoC6WdqJoqb3xY_uUgjAZrfkvLS8XGQsAvVrBTqbdtA
